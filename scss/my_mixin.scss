@@ -1,0 +1,105 @@
+////單行隱藏
+@mixin ellipsis($lines: 1) {
+	@if $lines !=1 {
+		overflow: hidden;
+		text-overflow: ellipsis;
+		display: -webkit-box;
+		-webkit-line-clamp: $lines;
+		-webkit-box-orient: vertical;
+	}
+	@else {
+		overflow: hidden;
+		white-space: nowrap;
+		text-overflow: ellipsis;
+	}
+}
+//	$break_layout:(
+//		mobile:(
+//			break: 0px,
+//			layout: 4
+//		),
+//		pad:(
+//			break: 768px,
+//			layout: 8
+//		),
+//		desktop:(
+//			break: 1280px,
+//			layout: 12
+//		)
+//	);
+////多種斷點
+$global-container-width:1280px;
+@mixin _break($screen: mobile) {
+	$map: map-get($break_layout, $screen);
+	$break: map-get($map, "break");
+	$layout: map-get($map, "layout");
+	@include susy-breakpoint($break, $layout) {
+		$global-container-width: $break;
+		@content;
+	}
+}
+@mixin get-global-container-width() {
+	@include _break("mobile") {
+		@include set-global-container-width("desktop");
+		width: $global-container-width;
+		@content;
+	}
+	@include _break("pad") {
+		@include set-global-container-width("desktop");
+		width: $global-container-width;
+		@content;
+	}
+	@include _break("desktop") {
+		@include set-global-container-width("desktop");
+		width: $global-container-width;
+		@content;
+	}
+}
+@mixin set-global-container-width($screen: mobile) {
+	$map: map-get($break_layout, $screen);
+	$break: map-get($map, "break");
+	$global-container-width: $break;
+}
+@mixin set-global-container-width2($screen: mobile) {
+	$map: map-get($break_layout, $screen);
+	$break: map-get($map, "break");
+	$global-container-width: $break;
+	width: $global-container-width;
+}
+//// 圓角
+@mixin border-radius($radius) {
+	-webkit-border-radius: $radius;
+	-moz-border-radius: $radius;
+	-ms-border-radius: $radius;
+	border-radius: $radius;
+}
+//.box {
+//    @include border-radius(10px);
+//}
+//// 跨瀏覽器透明度
+@mixin opacity($opacity) {
+	opacity: $opacity;
+	$opacity-ie: $opacity * 100;
+	filter: alpha(opacity=$opacity-ie); //IE8
+}
+//.faded-text {
+//    @include opacity(0.8);
+//}
+//建立一個clearfix的%placeholder，此處代碼不會被輸出到CSS
+%clearfix {
+	&:after,
+	&:before {
+		height: 0;
+		font-size: 0;
+		content: "";
+		display: block;
+	}
+	&:after {
+		clear: both;
+	}
+	*zoom:1;
+}
+////*在父元素extend clearfix*/
+//.wrap{
+//  @extend %clearfix;
+//}

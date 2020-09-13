@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+
+<head>
+    <meta charset="utf-8">
+    <title>fullpage demo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="./dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./dist/css/swiper.css">
+    <link rel="stylesheet" href="./dist/css/reset.css" />
+    <link rel="stylesheet" href="./dist/css/style.min.css" />
+</head>
+
+<body>
+    <!-- Swiper -->
+    <div class="swiper-container swiper-container-v">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide main01">
+
+                <div class="row" id="main01-ad">
+                    <h3 class="my-1">限時優惠中</h3>
+                    <p class="pull-left my-2">10/01 ~ 11/30為止</p>
+                    <div>
+                        <button class="btn btn-default btn-lg pull-left my-1">前往</button>
+                    </div>
+                </div>
+                <div class="layer">
+
+                    <h1>'有個運動館'</h1>
+                </div>
+            </div>
+            <div class="swiper-slide bgimg02">
+                <div class="container">
+                    <div class="row">
+                        <div class="ani-text col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                            <span class="text-spacel-1">8週輕</span>
+                            <span id="cnt1" class="my-1 text-spacel-title">20</span>
+                            <span class="text-spacel-1">公斤</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="swiper-container swiper-container-h">
+                    <div class="swiper-wrapper swiper-wrapper-h">
+                        <div class="swiper-slide slide02">
+                            <div class="page-relative" alt="notepic1">
+                                <!-- <img src="./img/bg03.jpg" alt="notepic1"> -->
+                                <div class="page-text01 text-right">
+                                    <h3>{ 街舞ＭＶ }</h3>
+                                    <h4 class="my-3">週二，週四，假日</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide slide01">
+                            <div class="page-relative">
+                                <!-- <img src="./img/bg01.jpg" alt="notepic1"> -->
+                                <div class="page-text02 text-left">
+                                    <h3>{ 曲線雕塑 }</h3>
+                                    <h4 class="my-3">每週一～週五</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide slide03">
+                            <div class="page-relative" alt="notepic1">
+                                <!-- <img src="./img/bg03.jpg" alt="notepic1"> -->
+                                <div class="page-text03 text-right ">
+                                    <h3>{ 基礎舞蹈 }</h3>
+                                    <h4 class="my-3">週一，三，五，晚上</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide slide04">
+                            <div class="page-relative" alt="notepic1">
+                                <!-- <img src="./img/bg03.jpg" alt="notepic1"> -->
+                                <div class="page-text04 text-right ">
+                                    <h3>{ 業界名師 }</h3>
+                                    <h4 class="my-3">有效學習，收費合理</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide slide05">
+                            <div class="page-relative" alt="notepic1">
+                                <!-- <img src="./img/bg03.jpg" alt="notepic1"> -->
+                                <div class="page-text05 text-right ">
+                                    <h3>{ 小班教學 }</h3>
+                                    <h4 class="my-3">六人即開課</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination swiper-pagination-h"></div>
+                    <div class="swiper-button-next swiper-button-white"></div>
+                    <div class="swiper-button-prev swiper-button-white"></div>
+                </div>
+            </div>
+            <div class="swiper-slide bgimg04" id="price-page">
+                <div class="container">
+                    <h2 class="mb-5">限時優惠</h2>
+                    <table class="table table-bordered">
+                        <tbody>
+                            <tr>
+                                <td class="row1">月票</td>
+                                <td class="row2">＄9999</td>
+                                <td class="row3">限本人,期限30天</td>
+                            </tr>
+                            <tr>
+                                <td class="row1">30堂</td>
+                                <td class="row2">＄999</td>
+                                <td class="row3">可多人共用不限課程,期限60天</td>
+                            </tr>
+                            <tr>
+                                <td class="row1">20堂</td>
+                                <td class="row2">＄888</td>
+                                <td class="row3">同上</td>
+                            </tr>
+                            <tr>
+                                <td class="row1">10堂</td>
+                                <td class="row2">＄555</td>
+                                <td class="row3">同上</td>
+                            </tr>
+                            <tr>
+                                <td class="row1">＊副卡</td>
+                                <td class="row2">＄100/卡</td>
+                                <td class="row3">與正卡連結,需正卡人簽名同意</td>
+                            </tr>
+                            <tr>
+                                <td class="row1">單堂</td>
+                                <td class="row2">＄2000</td>
+                                <td class="row3">＊特別課程</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="swiper-slide bgimg05">
+                <div>
+                    <h2 class="mb-5">免費體驗</h2>
+                    <div>
+                        <form action="" method="post" name="form1" id="form1">
+                            <div class="form-inline-block">
+                                <input class="from-input form-control" type="text" name="yourname" value="tester"
+                                    placeholder="* 您的姓名">
+                            </div>
+                            <div class="form-inline-block">
+                                <div class="from-input from-radio">
+                                    <input type="radio" name="sex" value="man" checked>男
+                                    <input type="radio" name="sex" value="woman">女
+                                </div>
+                            </div>
+                            <div class="form-inline-block">
+                                <input class="from-input form-control" type="text" name="phone" value="0912345678"
+                                    placeholder="* 手機號碼">
+                            </div>
+                            <div class="form-inline-block">
+                                <input class="from-input form-control" type="email" name="email" value="test@com.tw"
+                                    placeholder="* E-mail">
+                            </div>
+                            <div>
+                                <p>資料送出，將有專人與您聯繫</p>
+                            </div>
+
+                            <div>
+                                <button class="btn btn-default btn-block btn-xs form-submit mt-3" type="button"
+                                    onclick="checkAll(this.form.yourname,this.form.sex,this.form.phone,this.form.email);">
+                                    送出</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide bgimg06">
+                <div>
+                    <h2>歡迎前來體驗</h2>
+                    <div class="owner-copyright">
+                        <p class="mb-5">TEL：02-xxxx-xxxx</p>
+                        <p class="mb-5">週一至週五10:30~21:30</p>
+                        <p class="mb-5">週六11:00~21:30</p>
+                        <p class="mb-5">週日11:00~18:30</p>
+                        <p class="mb-5">台北市OO區###路OO號</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination swiper-pagination-v"></div>
+    </div>
+
+    <!-- Swiper JS -->
+    <script src="./js/jquery-1.11.3.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/swiper.js"></script>
+    <script src="./js/countUp.min.js"></script>
+    <script src="./js/jquery.waypoints.min.js"></script>
+    <script src="./js/my_swiper.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        window.onload = function () {
+
+            var firstRun = true;
+
+            if (firstRun) {
+                toggleAd(true);
+                firstRun = false;
+            }
+
+            var swiper = new Swiper('.swiper-container-v', {
+                direction: 'vertical',
+                // autoheight: true,
+                initialSlide: 0,
+                slidesPerView: 1,
+                // scrollbar: '.swiper-container-vertical',
+                spaceBetween: 30,
+                keyboardControl: true,
+                mousewheelControl: true,
+                paginationClickable: true,
+                pagination: '.swiper-pagination-v',
+                // next要用在container-h,所以這邊停用才正確
+                // prevButton: '.swiper-button-prev',
+                // nextButton: '.swiper-button-next',
+                // paginationClickable: '.swiper-pagination-v'
+                onTransitionEnd: function (swiper) {
+                    console.log("swiper activeIndex => " + swiper.activeIndex);
+                    if (swiper.activeIndex === 0) {
+                        console.log("if...");
+                        toggleAd(true);
+                    } else {
+                        console.log("else...");
+                        toggleAd(false);
+                    }
+                    if (swiper.activeIndex === 1) {
+                        runDivCount();
+                        removeAni();
+                    }
+                    if (swiper.activeIndex === 2) {
+                        addAni(".page-text01");
+                    }
+                    if (swiper.activeIndex === 3) {
+                        removeAni();
+                    }
+                }
+            });
+
+            // var canScrollbar = new Swiper('.swiper-container .swiper-container-scrollbar', {
+            // direction: 'vertical',
+            // scrollbarHide: false,
+            // autoheight: true,
+            // 設定auto很重要
+            // nested: true,
+            // slidesPerView: 'auto',
+            // freeMode: true,
+            // scrollbar: '.swiper-scrollbar',
+
+            // spaceBetween: 30,
+            // mousewheelControl: true,
+            // });
+
+            var swiper2 = new Swiper('.swiper-container-h', {
+                direction: 'horizontal',
+                autoheight: true,
+                slidesPerView: 1,
+                spaceBetween: 50,
+                keyboardControl: true,
+                mousewheelControl: false,
+                pagination: '.swiper-pagination-h',
+                nested: true,
+                updateOnImagesReady: true,
+                resistanceRatio: 0,
+                prevButton: '.swiper-button-prev',
+                nextButton: '.swiper-button-next',
+                onTransitionStart: function (swiper2) {
+                    console.log(swiper2.realIndex);
+                    if (swiper2.activeIndex === 0) {
+                        addAni(".page-text01");
+                    }
+                    if (swiper2.activeIndex === 1) {
+                        addAni(".page-text02");
+                    }
+                    if (swiper2.activeIndex === 2) {
+                        addAni(".page-text03");
+                    }
+                    if (swiper2.activeIndex === 3) {
+                        addAni(".page-text04");
+                    }
+                    if (swiper2.activeIndex === 4) {
+                        addAni(".page-text05");
+                    }
+                },
+                onTransitionEnd: function (swiper2) {}
+                // paginationClickable: '.swiper-pagination-h'
+            });
+        }
+    </script>
+</body>
+
+</html>
